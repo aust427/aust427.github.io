@@ -1,5 +1,6 @@
 // a fair amount of the code was sampled from the discussion files and 
 // example files from the CS 418 website provided by Prof. Shaffer
+
 var gl;
 var canvas;
 
