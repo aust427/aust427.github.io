@@ -1,8 +1,9 @@
-<!DOCTYPE HTML> 
+﻿<!DOCTYPE HTML> 
 <html lang="en"> 
 <head>
-<title>Teapot </title>
-<meta charset="utf-8"> 
+    <title>Teapot </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <meta charset="utf-8">
 </head>
 
 <script src="https://rawgit.com/toji/gl-matrix/master/dist/gl-matrix.js"></script>
@@ -200,11 +201,27 @@ void main() {
 <script src="webgl-utils.js"></script>    
 <script src="mp3.js"></script> 
 <body onload="startup();">
-<canvas id="myGLCanvas" width="800" height="800"></canvas>
-    <p> Testing Testing 1 2  3</p>
-    <p>A: Rotate Teapot Left (CW), D: Rotate Teapot Right (CCW) </p>
-    <p>E: Rotate World Left (CCW), Q: Rotate World Right (CW) </p>
-    <p>CW - Clockwise, CCW - Counterclockwise</p>
-    <P>X - Switch to Shader, C: Switch to Reflection</P>
+    <header>
+        <h1>
+            <a href="index.html">A. GABRIELPILLAI</a>
+        </h1>
+        <nav>
+            <a href="about.html" id="about">ABOUT</a>
+            <a href="research.html" id="research">RESEARCH</a>
+            <a href="a_gabrielpillai_cv.pdf" id="cv">CURRICULUM VITAE</a>
+            <a href="products.html" id="products">DATA PRODUCTS</a>
+            <a href="personal.html" id="personal">PERSONAL PROJECTS</a>
+        </nav>
+    </header>
+    <main>
+        <canvas id="myGLCanvas" width="550" height="550"></canvas>
+        <div id="controls">
+            <p>A: Rotate Teapot Left (CW) </br> D: Rotate Teapot Right (CCW) </p>
+            <p>E: Rotate World Left (CCW) </br> Q: Rotate World Right (CW) </p>
+            <P>X: Switch to Shader </br> C: Switch to Reflection</P>
+            <p>CW - Clockwise </br> CCW - Counterclockwise</p>
+        </div>
+        <p>Utah Teapot renderer built using WebGL for CS 418 at UIUC.</p>
+    </main>
 </body>
 </html>
