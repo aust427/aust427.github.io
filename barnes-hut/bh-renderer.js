@@ -297,9 +297,8 @@ function updateParticles() {
 }
 
 var mirror, loop = false;
-var infinite = false; 
+var infinite = true; 
 
- loop = true;
 var play = true; 
 function animate() {
  requestAnimationFrame(animate);
