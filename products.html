@@ -1,72 +1,212 @@
 ﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Data Products - A. Gabrielpillai</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Austen Gabrielpillai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<html>
 <body>
-    <header>
-        <h1>
-            <a href="index.html">AUSTEN GABRIELPILLAI</a>
-        </h1>
-        <nav>
-            <a href="about.html" id="about">ABOUT</a>
-            <a href="research.html" id="research">RESEARCH</a>
-            <a href="a_gabrielpillai_cv.pdf" id="cv">CURRICULUM VITAE</a>
-            <a href="products.html" id="products">DATA PRODUCTS</a>
-            <a href="personal.html" id="personal">PERSONAL PROJECTS</a>
+    <header id="title">
+        <div class="jumbotron jumbotron-fluid" id="title">
+            <div class="container">
+                <a href="index.html" class="active">AUSTEN GABRIELPILLAI</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand d-inline-block d-lg-none" href="#">AUSTEN GABRIELPILLAI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarMd">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbarMd">
+                <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link" href="about.html"> ABOUT <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="research.html">RESEARCH</a>
+                    <a class="nav-item nav-link" href="a_gabrielpillai_cv.pdf">CURRICULUM VITAE</a>
+                    <a class="nav-item nav-link" href="products.html">DATA PRODUCTS</a>
+                    <a class="nav-item nav-link" href="personal.html">CREATIVE</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <p>
-            A selection of various programming projects that I have developed and contributed to. These projects cover
-            3D visualization, algorithm application, data science, and front-end development. 
-        </p>
-        <h2>Personal Spotify Data Analysis</h2>
-        <div>
-            <p>
-                An analysis of my personal Spotify data as an attempt to create a song prediction algorithm using data analysis and
-                machine learning. Analysis was completed using Python, a Jupyter Notebook, and the Spotify API. Read about the project 
-                and it's stages here: [Procedure & Analysis] [Feature Visualization] [Machine Learning & Results] (coming soon).
-            </p>
+        <div class="container">
+            <h2>Data Products</h2>
+            <div class="row">
+                A selection of various programming projects that I have developed and contributed to.
+                These projects cover 3D visualization, algorithm application, data science, and front-end development.
+                Click on an image to learn more about the project and the technologies used to build it.
+            </div>
         </div>
-        <h2>Barnes-Hut Algorithm</h2>
-        <div>
-            <img src="images/data-products/barnes-hut.png" alt="bh-tree" height="300" class="center">
-            <p>
-                An application built for applying the Barnes-Hut algorithm to an n-body simulation. Built in JavaScript using
-                Three.js. See the <a href="barnes-hut/barnes-hut.html">here</a>.
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h3>Subhalo Visualizer</h3>
+                    <img src="images/data-products/sub-part-vis.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle">
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Lorenz System</h3>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Game of Life</h3>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Spotify Analysis</h3>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Utah Teapot</h3>
+                    <img src="images/data-products/utah-teapot.png" alt="Utah Teapot"  height="250" width="250" class="rounded-circle">
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3>Barnes-Hut</h3>
+                    <img src="images/data-products/barnes-hut.png" alt="bh-tree" data-toggle="modal" data-target="#barnes-modal"  height="250" width="250" class="rounded-circle">
+                </div>
+            </div>
         </div>
-        <h2>Subhalo Particle Visualizer</h2>
-        <div>
-            <img src="images/data-products/sub-part-vis.jpg" alt="Subhalo Particle Visualizer" height="300" class="center">
-            <p>
-                An application built for visualizing and plotting subhalo particle data from the
-                Illustris and IllustrisTNG simulations. Utilizes a JavaScript front-end and a Python back-end.
-                The main libaries are Three.js, jQuery.js, and D3.js. See the Github repository <a>here</a>. Is
-                currently in-development.
-            </p>
+        <!-- Modals -->
+        <div class="modal fade" id="subhalo-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/data-products/sub-part-vis.jpg" alt="Subhalo Particle Visualizer" width="100%" class="center">
+                        <p>
+                            An application built for visualizing and plotting subhalo particle data from the
+                            Illustris and IllustrisTNG simulations. The left panel is an rotatable / zoomable 3D view of the particles, while the
+                            right panel is a contour plot over a quantity overlayed a heatmap of a second quantity, calculated from the particles in view.
+                        </p>
+                        <p>
+                            Libraries: <br />
+                            JavaScript - THREE.js, D3.js, jQuery.js  <br />
+                            Python - Flask
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Github</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2>Astrosims</h2>
-        <div>
-            <p>
-                An online database used for hosting astronomical simulation data. Developed alongside Dylan Simon,
-                PhD, and Elizabeth Lovero. Primary contributions include front end development, data visualization,
-                and database management. See the website <a href="http://astrosims.flatironinstitute.org/">here</a>.
-            </p>
+        <div class="modal" id="lorenz-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Image 
+                        Description
+                        Libraries
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Github</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2>Utah Teapot</h2>
-        <div>
-            <img src="images/data-products/utah-teapot.png" alt="Utah Teapot" height="300" class="center">
-            <p>
-                An interactive rendering of the Utah Teapot. Developed using JavaScript and the WebGL library. Includes
-                a toggle between environment mapping and basic shading, as well as object and world rotations. See the 
-                interactive example <a href="teapot/teapot.html">here</a>. 
-            </p>
+        <div class="modal fade" id="life-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Image
+                        Description
+                        Libraries
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="spotify-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Image
+                        Description
+                        Libraries
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="teapot-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Image
+                        Description
+                        Libraries
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="barnes-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/data-products/barnes-hut.png" alt="bh-tree" width="100%" class="center">
+                        Description
+                        <p>
+                            Libraries: <br />
+                            JavaScript - THREE.js<br />
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Github</button>
+                        <button type="button" class="btn btn-secondary">Demo</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            LinkedIn Icon, GitHub Icon, Twitter Icon
+        </div>
+    </footer>
 </body>
 </html>

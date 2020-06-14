@@ -1,107 +1,91 @@
-﻿body, html {
+﻿html, body {
     height: 100%;
-    margin: 0;
+}
+
+.slider {
+    width: 100px;
+}
+
+.pos-input {
+    width: 55px;
+}
+
+body, html {
     background-color: #D8DBE2;
     font-family: Palatino;
 }
 
-header {
-    background-color: #1B2A42;
-    text-align: center;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 120px;
-    padding-bottom: 20px;
-    z-index: 0;
+h1, h2, h3, h4 {
+    margin-bottom: 5px;
 }
 
-    header a {
-        padding: 20px;
-        text-decoration: none;
-    }
-
-        header a:link {
-            color: #58A4B0;
-        }
-
-        header a:visited {
-            color: #58A4B0;
-        }
-
-        header a:hover {
-            color: #A9BCD0;
-        }
-
-/* The hero image */
-.hero-image {
-    top: 140px;
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("images/SAM-Three-js.jpg");
-    /* Set a specific height */
-    height: 70%;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #A9BCD0;
-}
-
-footer {
-    bottom: 0;
-    background-color: #1B2A42;
-    width: 100%;
-    color: white;
-    text-align: center;
-    height: 140px;
-    margin-top: 140px;
-}
-
-main {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-top: 140px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-h2 {
-    text-align: center;
-}
-
-h2, h3, h4 {
+h1, h3 {
     color: #BA1200;
 }
 
-
-h1 {
-    font-size: 40px;
-}
-
-.photos-center {
+#title {
     text-align: center;
+    background-color: #1B2A42;
+    text-decoration: none;
+    font-size: 35px;
+    margin-bottom: 0;
 }
 
-#controls {
-    float: right;
+nav {
+    background-color: #1B2A42;
 }
 
+.jumbotron {
+    font-weight: bold;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+    #title a:link {
+        color: #58A4B0;
+    }
+
+    #title a:visited {
+        color: #58A4B0;
+    }
+
+    #title a:hover {
+        color: #A9BCD0;
+        text-decoration: none;
+    }
+
+
+@media (min-width: 992px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    nav {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .jumbotron {
+        display: none;
+    }
+
+    .navbar-brand{
+        font-size: 25px;
+    }
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background: #1B2A42;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}

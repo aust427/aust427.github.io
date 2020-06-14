@@ -1,41 +1,102 @@
 ﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About - A. Gabrielpillai</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Austen Gabrielpillai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-about.css">
 </head>
-<html>
 <body>
-    <header>
-        <h1>
-            <a href="index.html">AUSTEN GABRIELPILLAI</a>
-        </h1>
-        <nav>
-            <a href="about.html" id="about">ABOUT</a>
-            <a href="research.html" id="research">RESEARCH</a>
-            <a href="a_gabrielpillai_cv.pdf" id="cv">CURRICULUM VITAE</a>
-            <a href="products.html" id="products">DATA PRODUCTS</a>
-            <a href="personal.html" id="personal">PERSONAL PROJECTS</a>
+    <header id="title">
+        <div class="jumbotron jumbotron-fluid" id="title">
+            <div class="container">
+                <a href="index.html" class="active">AUSTEN GABRIELPILLAI</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand d-inline-block d-lg-none" href="#">AUSTEN GABRIELPILLAI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarMd">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapsingNavbarMd">
+                <div class="navbar-nav mx-lg-auto">
+                    <a class="nav-item nav-link" href="about.html"> ABOUT <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="research.html">RESEARCH</a>
+                    <a class="nav-item nav-link" href="a_gabrielpillai_cv.pdf">CURRICULUM VITAE</a>
+                    <a class="nav-item nav-link" href="products.html">DATA PRODUCTS</a>
+                    <a class="nav-item nav-link" href="personal.html">CREATIVE</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <p>
-            I am currently a graduate student at Rutgers University pursing a Master
-            of Information degree and preforming computational astrophysics research at the Flatiron Institute.
-            My main interests are scientific modeling, galaxy formation, and machine learning.
-        </p>
-        <h2>Education</h2>
-        <ul>
-            <li>Rutgers University | Sept. 2018 - Present <br /> Master of Information | Concentration: Data Science</li>
-            <li>University of Illinois Urbana-Champaign | Aug. 2013 - May 2017 <br /> Bachelor of Science in Engineering Physics | Concentration: Computer Science</li>
-        </ul>
-        <h2>Work Experience</h2>
-        <ul>
-            <li>Research Analyst | Jul. 2018 - Present <br /> Flatiron Institute | Galaxy Formation Group (Center for Computational Astrophysics) </li>
-            <li>Undergraduate Research Assistant | May 2016 - Aug. 2016 <br /> GSI Helmholtz Center for Heavy Ion Physics | Atomic Physics Group </li>
-        </ul>
+        <div class="container">
+            <h2>About</h2>
+            <div class="row">
+                <div class="col">
+                    Picture here
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Welcome to my site! I am a recent graduate of Rutgers University - New Brunswick, where I obtained a Master of Information, concentrating in Data Science.
+                        I am currently employed at the Flatiron Institute, where I preform computational astropyhysics research at the Center for Computational Astrophysics.
+                        My main interests are creating scientific web visualizations, researching galaxy formation, and machine learning.
+                    </p>
+                </div>
+            </div>
+            <h2>Education</h2>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>Rutgers University - New Brunswick</li>
+                        <li>Sept. 2018 - May 2020</li>
+                        <li><strong>Master of Information</strong></li>
+                        <li><strong>Concentration: Data Science</strong></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>University of Illinois at Urbana-Champaign</li>
+                        <li>Aug. 2013 - May 2017</li>
+                        <li><strong>Bachelor of Science in Engineering Physics</strong></li>
+                        <li><strong>Concentration: Computer Science</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Work Experience</h2>
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li>Flatiron Institute - Simons Foundation</li>
+                        <li>Research Analyst</li>
+                        <li>Jul. 2018 - Present</li>
+                        <li>Galaxy Formation, CCA</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li>GSI Helmholtz Center for Heavy Ion Physics</li>
+                        <li>Undergraduate Research Assistant</li>
+                        <li>May 2016 - Aug. 2016</li>
+                        <li>Atomic Physics Group</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            LinkedIn Icon, GitHub Icon, Twitter Icon
+        </div>
+    </footer>
 </body>
-<footer>
-</footer>
 </html>
+
+
+
