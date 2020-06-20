@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-product.css" />
 </head>
 <body>
     <header id="title">
@@ -19,7 +20,7 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand d-inline-block d-lg-none" href="#">AUSTEN GABRIELPILLAI</a>
+            <a class="navbar-brand d-inline-block d-lg-none" href="index.html">AUSTEN GABRIELPILLAI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarMd">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,34 +39,38 @@
         <div class="container">
             <h2>Data Products</h2>
             <div class="row">
-                A selection of various programming projects that I have developed and contributed to.
-                These projects cover 3D visualization, algorithm application, data science, and front-end development.
-                Click on an image to learn more about the project and the technologies used to build it.
+                <p>
+                    Programming projects I have developed or contributed to. </br> <b>Include: </b> 3D visualizations,
+                    algorithm application, data science, and front-end development.
+                </p>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
                     <h3>Subhalo Visualizer</h3>
-                    <img src="images/data-products/sub-part-vis.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle">
+
+                    <img src="images/data-products/sub-part-vis.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <h3>Lorenz System</h3>
+                    <img src="images/data-products/lorenz.jpg" data-toggle="modal" data-target="#lorenz-modal" alt="Lorenz System" height="250" width="250" class="rounded-circle thumbnail">
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <h3>Game of Life</h3>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <h3>Spotify Analysis</h3>
+                    <img src="images/data-products/like-dislike.png" data-toggle="modal" data-target="#spotify-modal" alt="Spotify Analysis" height="250" width="250" class="rounded-circle thumbnail">
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <h3>Utah Teapot</h3>
-                    <img src="images/data-products/utah-teapot.png" alt="Utah Teapot"  height="250" width="250" class="rounded-circle">
+                    <img src="images/data-products/utah-teapot.png" alt="Utah Teapot" data-toggle="modal" data-target="#teapot-modal" height="250" width="250" class="rounded-circle thumbnail">
 
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <h3>Barnes-Hut</h3>
-                    <img src="images/data-products/barnes-hut.png" alt="bh-tree" data-toggle="modal" data-target="#barnes-modal"  height="250" width="250" class="rounded-circle">
+                    <img src="images/data-products/barnes-hut.png" alt="bh-tree" data-toggle="modal" data-target="#barnes-modal" height="250" width="250" class="rounded-circle thumbnail">
                 </div>
             </div>
         </div>
@@ -74,66 +79,63 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
+                        <p>
+                            <button type="button" class="btn btn-primary">Github</button>
+                        </p>
+                        <p>
+                            An application built for visualizing and plotting subhalo particle data from the Illustris and IllustrisTNG simulations.
+                        </p>
                         <img src="images/data-products/sub-part-vis.jpg" alt="Subhalo Particle Visualizer" width="100%" class="center">
                         <p>
-                            An application built for visualizing and plotting subhalo particle data from the
-                            Illustris and IllustrisTNG simulations. The left panel is an rotatable / zoomable 3D view of the particles, while the
-                            right panel is a contour plot over a quantity overlayed a heatmap of a second quantity, calculated from the particles in view.
+                            <b>Left panel:</b> A rotatable zoomable 3D view of the particles.
+                            <b>Right panel: </b>contour plot over a quantity overlayed on a heatmap of a second quantity, calculated from the particles in view.
                         </p>
                         <p>
-                            Libraries: <br />
-                            JavaScript - THREE.js, D3.js, jQuery.js  <br />
-                            Python - Flask
+                            <b>Libraries Utilized:</b>
+                            <ul>
+                                <li>JavaScript - THREE.js, D3.js, jQuery.js</li>
+                                <li>Python - Flask</li>
+                            </ul>
                         </p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Github</button>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="modal" id="lorenz-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="lorenz-modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">Lorenz System</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Image 
-                        Description
-                        Libraries
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Github</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="life-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Image
-                        Description
-                        Libraries
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Github</button>
+                        <p>
+                            <button type="button" class="btn btn-primary">Github</button>
+                            <button type="button" class="btn btn-secondary">Interactive</button>
+                        </p>
+                        <p>
+                            Visualizing the Lorenz system, commonly known as the “butterfly effect”, in an interactive capacity using Runge-Kutta Methods (RK4) to solve  ODEs.
+                        </p>
+                        <img src="images/data-products/lorenz.jpg" alt="Lorenz System" width="100%" class="center">
+                        <p>
+                            <b>Top Left:</b> Control initialization for particle positions and other important constants.
+                            <b>Top Right: </b> Interactive 3D visualization of particle trajectories.
+                            <b>Bottom:</b> Individual particle trajectories in the x-, y-, and z-coordinate planes.
+                        </p>
+                        <p>
+                            <b>Libraries Utilized:</b>
+                            <ul>
+                                <li>JavasScript - Three,js, D3.js</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -142,18 +144,32 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">Personal Spotify Playlist Analysis</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Image
-                        Description
-                        Libraries
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Github</button>
+                        <p>
+                            <button type="button" class="btn btn-primary">Github</button>
+                        </p>
+                        <p>
+                            An analysis of my personal song preferences using 366 songs categorized into "like" and "dislike" playlists on Spotify in an attempt to recreate their "Recommend" algorithm using machine learning.
+                        </p>
+                        <img src="images/data-products/like-dislike.png" alt="Lorenz System" width="100%" class="center">
+                        <p>
+                            A plot generated for comparing Spotify song feature distributions for the two playlists (orange - dislike, blue - like).
+                        </p>
+                        <p>
+                            <b>Algorithms Utilized:</b>
+                            <ul>
+                                <li>k-Nearest Neighbors, Support Vector Machine, Random Forest, Logistic Regression</li>
+                            </ul>
+                            <b>Libraries Utilized:</b>
+                            <ul>
+                                <li>Python (Jupyter) - pandas, spotipy, numpy, matplotlib, scipy</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -162,18 +178,29 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">Utah Teapot</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Image
-                        Description
-                        Libraries
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary">Github</button>
+                        <p>
+                            <button type="button" class="btn btn-primary">Github</button>
+                            <button type="button" class="btn btn-secondary">Interactive</button>
+                        </p>
+                        <p>
+                            The classic Utah Teapot, built for an introductory Interactive Computer Graphics course.
+                        </p>
+                        <img src="images/data-products/utah-teapot.png" alt="Teapot" width="100%" class="center">
+                        <p>
+                            <b>Left: </b> Utah teapot rendering. <b>Right: </b> Interactive instructions for switching shaders and rotating the object.
+                        </p>
+                        <p>
+                            <b>Libraries Utilized:</b>
+                            <ul>
+                                <li>JavaScript - WebGL </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -182,22 +209,33 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Subhalo Particle Visualizer</h5>
+                        <h2 class="modal-title" id="exampleModalLabel">Utah Teapot</h2>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <img src="images/data-products/barnes-hut.png" alt="bh-tree" width="100%" class="center">
-                        Description
                         <p>
-                            Libraries: <br />
-                            JavaScript - THREE.js<br />
+                            <button type="button" class="btn btn-primary">Github</button>
+                            <button type="button" class="btn btn-secondary">Interactive</button>
                         </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Github</button>
-                        <button type="button" class="btn btn-secondary">Demo</button>
+                        <p>
+                            An implmentation of the Barnes-Hut algorithm in JavaScript as an introduction into n-body simulation code.
+                        </p>
+                        <img src="images/data-products/barnes-hut.png" alt="Teapot" width="100%" class="center">
+                        <p>
+                            A paused iteration of a run of the algorithm with visual particles and underlying quadtree structure.
+                        </p>
+                        <p>
+                            <b>Algorithms Utilized: </b>
+                            <ul>
+                                <li>Barnes-Hut, Quadtree</li>
+                            </ul>
+                            <b>Libraries Utilized:</b>
+                            <ul>
+                                <li>JavaScript - Three.js </li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -205,7 +243,17 @@
     </main>
     <footer class="footer">
         <div class="container">
-            LinkedIn Icon, GitHub Icon, Twitter Icon
+            <div class="social-icons">
+                <a href="https://github.com/aust427">
+                    <img src="icons/GitHub-Mark-64px.png" class="social-icons" />
+                </a>
+                <a href="https://twitter.com/a_gabrielpillai">
+                    <img src="icons/Twitter_Logo_Blue.png" class="social-icons" />
+                </a>
+                <a href="https://www.linkedin.com/in/a-gabrielpillai">
+                    <img src="icons/LI-In-Bug.png" class="social-icons" />
+                </a>
+            </div>
         </div>
     </footer>
 </body>
