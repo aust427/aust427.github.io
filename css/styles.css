@@ -12,7 +12,7 @@
 
 body, html {
     background-color: #D8DBE2;
-    font-family: Palatino;
+    font-family: Palatino Linotype;
 }
 
 h1, h2, h3, h4 {
@@ -77,7 +77,7 @@ nav {
     }
 }
 
-.footer {
+footer {
     position: absolute;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -88,4 +88,20 @@ nav {
 .no-padding {
     padding-left: 0;
     padding-right: 0;
+}
+
+.social-icons {
+    max-height: 60px;
+    width: auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
