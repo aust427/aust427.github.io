@@ -10,29 +10,36 @@
     width: 55px;
 }
 
+.modal-content {
+    background-color: #FEF8EC;
+}
+
 body, html {
-    background-color: #D8DBE2;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #FEF8EC;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4 {
     margin-bottom: 5px;
-}
-
-h1, h3 {
-    color: #BA1200;
+    color: #70A9A1;
+    font-weight: 600;
+    padding-bottom: 5px;
 }
 
 #title {
     text-align: center;
-    background-color: #1B2A42;
+    background-color: #FEF8EC;
     text-decoration: none;
     font-size: 35px;
     margin-bottom: 0;
 }
 
+#collapsingNavbarMd a {
+    font-size: 20px;
+}
+
 nav {
-    background-color: #1B2A42;
+    background-color: #FEF8EC;
 }
 
 .jumbotron {
@@ -41,18 +48,23 @@ nav {
     padding-bottom: 24px;
 }
 
-    #title a:link {
-        color: #58A4B0;
-    }
+.btn-primary {
+    background-color: #47859A;
+}
 
-    #title a:visited {
-        color: #58A4B0;
-    }
+#title a:link {
+    color: #1F363D;
+}
 
-    #title a:hover {
-        color: #A9BCD0;
-        text-decoration: none;
-    }
+#title a:visited {
+    color: #294851;
+}
+
+#title a:hover {
+    color: #47859A;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 @media (min-width: 992px) {
@@ -83,7 +95,7 @@ footer {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background: #1B2A42;
+    background: #FEF8EC;
 }
 
 .no-padding {
@@ -92,9 +104,11 @@ footer {
 }
 
 .social-icons {
-    max-height: 60px;
+    max-height: 40px;
     width: auto;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 img {
@@ -106,3 +120,4 @@ main{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
