@@ -75,7 +75,6 @@ nav {
 
 }
 
-
 nav {
     font-size: 18px;
 }
@@ -96,6 +95,7 @@ footer {
     /* Set the fixed height of the footer here */
     height: 60px;
     background: #FEF8EC;
+    padding-top: 10px;
 }
 
 .no-padding {

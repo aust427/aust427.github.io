@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-product.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
                 <a href="index.html" class="active">AUSTEN GABRIELPILLAI</a>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand d-inline-block d-lg-none" href="index.html">AUSTEN GABRIELPILLAI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarMd">
                 <span class="navbar-toggler-icon"></span>
@@ -37,28 +38,58 @@
         </nav>
     </header>
     <main>
-        <p>
-            A collection of the various personal projects I have created. My three focuses are rastering and vectoring, 3D
-            design and printing, and astrophotography. Click on each image to view more in depth details about it. None of
-            the items depicted or the files used to create them are for sale.
-        </p>
-        <h2>Vectoring + Rastering</h2>
-        <div class="photos-center">
-            <image src="images/personal-projects/vectoring/hoenn.jpg" alt="Hoenn" height="200"></image>
-            <image src="images/personal-projects/vectoring/sinnoh.jpg" alt="Sinnoh" height="200"></image>
-            <image src="images/personal-projects/vectoring/kanto-johto.jpg" alt="Kanto-Johto" height="200"></image>
-            <image src="images/personal-projects/vectoring/departure.jpg" alt="Departure" height="200"></image>
+        <div class="container">
+            <h2>Creative Projects</h2>
+            <p>
+                A collection of the various personal projects I have created. My focuses are:
+            </p>
+            <ul>
+                <li>rastering and vectoring</li>
+                <li>3D design and printing</li>
+            </ul>
         </div>
-        <h2>3D Design + Printing</h2>
-        <div class="photos-center">
-            <image src="images/personal-projects/3d-design/wng.jpg" alt="Where Nothing Gathers" height="200"></image>
-            <image src="images/personal-projects/3d-design/gummi.png" alt="Gummi Ship (KH3)" height="200"></image>
-        </div>
-        <h2>Astrophotography</h2>
-        <div class="photos-center">
-            Coming Soon!
+        <div class="container">
+            <h3>Vectoring + Rastering</h3>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 parent-img-h">
+                    <img src="images/personal-projects/vectoring/hoenn-icon.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-4 parent-img-h">
+                    <img src="images/personal-projects/vectoring/kanto-johto-icon.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
+                </div>
+                <div class="col-md-12 col-lg-4 parent-img-h">
+                    <img src="images/personal-projects/vectoring/sinnoh-icon.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
+                </div>
+            </div>
+            <h3>3D Design + Printing</h3>
+            <div class="row">
+                <div class="col-md-6 col-lg-5 parent-img-h">
+                    <img src="images/personal-projects/3d-design/wng-icon.jpg" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
+                </div>
+                <div class="col-md-6 col-lg-5 parent-img-h">
+                    <img src="images/personal-projects/3d-design/gummi-icon.png" data-toggle="modal" data-target="#subhalo-modal" alt="Subhalo Particle Visualizer" height="250" width="250" class="rounded-circle thumbnail">
+                </div>
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col"><hr /></div>
+                <div class="col-auto social-icons">
+                    <a href="https://github.com/aust427">
+                        <img src="icons/GitHub-Mark-64px.png" class="social-icons" />
+                    </a>
+                    <a href="https://twitter.com/a_gabrielpillai">
+                        <img src="icons/Twitter_Logo_Blue.png" class="social-icons" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/a-gabrielpillai">
+                        <img src="icons/LI-In-Bug.png" class="social-icons" />
+                    </a>
+                </div>
+                <div class="col"><hr /></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,20 @@
+﻿.thumbnail:hover {
+    background-color: red;
+    opacity: 0.5;
+}
+
+h3{
+}
+
+img{
+    margin: auto;
+}
+
+.parent-img-h {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center-buttons{
+    text-align: center;
+}
