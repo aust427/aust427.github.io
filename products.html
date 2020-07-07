@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Austen Gabrielpillai - Data Products</title>
+    <meta name="description" content="Experienced programmer and researcher focusing on computational astrophysics.">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153675831-1"></script>
     <script>
@@ -71,7 +72,9 @@
                         <img src="images/data-products/lorenz-icon.jpg" data-toggle="modal" data-target="#lorenz-modal" alt="Lorenz System" height="250" width="250" class="rounded-circle thumbnail">
                     </div>
                     <div class="col-md-6 col-lg-4 parent-img-h">
-                        <h3>Game of Life</h3>
+                        <h3>Personal Website</h3>
+                        <img src="images/data-products/website-icon.png" data-toggle="modal" data-target="#website-modal" alt="Personal Website" height="250" width="250" class="rounded-circle thumbnail">
+
                     </div>
                     <div class="col-md-6 col-lg-4 parent-img-h">
                         <h3>Spotify Analysis</h3>
@@ -83,7 +86,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4 parent-img-h">
                         <h3>Barnes-Hut</h3>
-                        <img src="images/data-products/barnes-hut.png" alt="bh-tree" data-toggle="modal" data-target="#barnes-modal" height="250" width="250" class="rounded-circle thumbnail">
+                        <img src="images/data-products/barnes-hut.png" alt="Barnes-Hut Tree" data-toggle="modal" data-target="#barnes-modal" height="250" width="250" class="rounded-circle thumbnail">
                     </div>
                 </div>
             </div>
@@ -102,12 +105,12 @@
                                 An application built for visualizing and plotting subhalo particle data from the Illustris and IllustrisTNG simulations.
                             </p>
                             <p class="center-buttons">
-                                <button type="button" class="btn btn-primary">View Github</button>
+                                <a href="https://github.com/aust427/Subhalo-Particle-Visualizer" target="_blank" class="btn btn-primary">View Github</a>
                             </p>
                             <img src="images/data-products/sub-part-vis.jpg" alt="Subhalo Particle Visualizer" width="100%" class="center">
                             <p>
-                                <b>Left panel:</b> A rotatable zoomable 3D view of the particles.
-                                <b>Right panel: </b>contour plot over a quantity overlayed on a heatmap of a second quantity, calculated from the particles in view.
+                                <b>Left panel:</b> A rotatable, zoomable 3D view of the particles. Can switch between orthogonal and perspective views.
+                                <b>Right panel: </b> A contour plot of a quantity of the particles overlayed on a heatmap of another quantity of the particles. These are calculated from the particles shown in the left panel.
                             </p>
                             <p>
                                 <b>Libraries Utilized:</b>
@@ -131,21 +134,20 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                An interactive visualization of the  Lorenz system, commonly known as the “butterfly effect.” Solved ordinary different equations using Runge-Kutta Methods (RK4).
+                                An interactive visualization of the Lorenz system, commonly known as the “butterfly effect.” I solved ordinary differential equations using Runge-Kutta Methods (RK4).
                             </p>
                             <p class="center-buttons">
-                                <button type="button" class="btn btn-primary">View Github</button>
+                                <a href="https://github.com/aust427/lorenz-system" target="_blank" class="btn btn-primary">View Github</a>
                             </p>
                             <img src="images/data-products/lorenz-website.png" alt="Lorenz System" width="100%" class="center">
                             <p>
-                                <b>Top Left:</b> Control initialization for particle positions and other important constants. <br />
-                                <b>Top Right: </b> Interactive 3D visualization of particle trajectories.  <br />
-                                <b>Bottom:</b> Individual particle trajectories in the x-, y-, and z-coordinate planes.
+                                <b>Left:</b> Control initialization parameters for particle positions and other important constants. <br />
+                                <b>Right: </b> Interactive 3D visualization of particle trajectories. <br />
                             </p>
                             <p>
                                 <b>Libraries Utilized:</b>
                                 <ul>
-                                    <li>JavasScript - Three,js, D3.js</li>
+                                    <li>JavaScript - THREE.js, D3.js</li>
                                 </ul>
                             </p>
                         </div>
@@ -164,11 +166,10 @@
                         <div class="modal-body">
                             <p>
                                 A recreation of Spotify’s algorithm for recommending songs. I sorted 366 songs into “like” and “dislike” playlists, then trained my algorithm to recommend songs to me based on various song features.
-                            </p>
                             <p class="center-buttons">
-                                <button type="button" class="btn btn-primary">View Github</button>
+                                <a href="https://github.com/aust427/Spotify-Analysis" target="_blank" class="btn btn-primary">View Github</a>
                             </p>
-                            <img src="images/data-products/like-dislike.png" alt="Lorenz System" width="100%" class="center">
+                            <img src="images/data-products/like-dislike.png" alt="Spotify" width="100%" class="center">
                             <p>
                                 A plot generated for comparing Spotify song feature distributions for the two playlists (orange - dislike, blue - like).
                             </p>
@@ -179,7 +180,7 @@
                                 </ul>
                                 <b>Libraries Utilized:</b>
                                 <ul>
-                                    <li>Python (Jupyter) - pandas, spotipy, numpy, matplotlib, scipy</li>
+                                    <li>Python (Jupyter) - pandas, spotipy, numpy, matplotlib, scikit-learn</li>
                                 </ul>
                             </p>
                         </div>
@@ -197,12 +198,12 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                Utah teapot rendering for an interactive computer graphics course. Allows for object and world rotation, and switching between shader to cubemap reflections.
+                                The Utah Teapot, a classic exercise for 3D rendering. Created for an interactive computer graphics course. Allows for object and world rotation, and switching between shader to cubemap reflections.
                             </p>
                             <p class="center-buttons">
-                                <button type="button" class="btn btn-primary">View Github</button>
+                                <a href="https://github.com/aust427/Utah-Teapot" target="_blank" class="btn btn-primary">View Github</a>
                             </p>
-                            <img src="images/data-products/utah-teapot.png" alt="Teapot" width="100%" class="center">
+                            <img src="images/data-products/utah-teapot-website.png" alt="Teapot" width="100%" class="center">
                             <p>
                                 <b>Left: </b> Utah teapot rendering. <br />
                                 <b>Right: </b> Interactive instructions for switching shaders and rotating the object.
@@ -210,7 +211,7 @@
                             <p>
                                 <b>Libraries Utilized:</b>
                                 <ul>
-                                    <li>JavaScript - WebGL </li>
+                                    <li>JavaScript - webgl-utils.js </li>
                                 </ul>
                             </p>
                         </div>
@@ -228,14 +229,14 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                An implementation of the Barnes-Hut algorithm in JavaScript as an introduction into n-body simulation code.
+                                An implementation of the Barnes-Hut algorithm in JavaScript as an introduction to n-body simulation code.
                             </p>
                             <p class="center-buttons">
                                 <button type="button" class="btn btn-primary">View Github</button>
                             </p>
-                            <img src="images/data-products/barnes-hut.png" alt="Teapot" width="100%" class="center">
+                            <a href="https://github.com/aust427/Barnes-Hut" target="_blank" class="btn btn-primary">View Github</a>
                             <p>
-                                Has interactable elements, such as controlling how many particles are initialized into the scene, and pausing and displaying the underlying quad-tree structure used for calculations.
+                                Includes interactive elements. You can control how many particles are initialized into the scene, and pause and display the underlying quad-tree structure used for calculations.
                             </p>
                             <p>
                                 <b>Algorithms Utilized: </b>
@@ -251,19 +252,46 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="website-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel">Personal Website</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                It's a bit meta, but here's my personal website hosted on Github Pages. Hello, world!
+                            </p>
+                            <p class="center-buttons">
+                                <button type="button" class="btn btn-primary">View Github</button>
+                            </p>
+                            <a href="https://github.com/aust427/aust427.github.io" target="_blank" class="btn btn-primary">View Github</a>
+                            <p>
+                                <b>Libraries Utilized:</b>
+                                <ul>
+                                    <li>Web - Bootstrap, Google Analytics</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col"><hr /></div>
                     <div class="col-auto social-icons">
-                        <a href="https://github.com/aust427">
+                        <a href="https://github.com/aust427" target="_blank">
                             <img src="icons/GitHub-Mark-64px.png" class="social-icons" />
                         </a>
-                        <a href="https://twitter.com/a_gabrielpillai">
+                        <a href="https://twitter.com/a_gabrielpillai" target="_blank">
                             <img src="icons/Twitter_Logo_Blue.png" class="social-icons" />
                         </a>
-                        <a href="https://www.linkedin.com/in/a-gabrielpillai">
+                        <a href="https://www.linkedin.com/in/a-gabrielpillai" target="_blank">
                             <img src="icons/LI-In-Bug.png" class="social-icons" />
                         </a>
                     </div>
