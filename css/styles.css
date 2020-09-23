@@ -121,3 +121,44 @@ main{
     padding-bottom: 20px;
 }
 
+.row{
+    margin-bottom: 10px;
+}
+
+.img-row{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.diamond, .diamond div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+/*adopted and modified from https://stackoverflow.com/questions/29654453/bootstrap-different-shaped-images */
+.diamond {
+    transform: rotate(45deg);
+}
+
+    .diamond .los1 {
+        width: 200px;
+        height: 200px;
+    }
+
+        .diamond .los1 img {
+            width: 100%;
+            height: auto;
+            -moz-transition: all 0.6s scale(1.6);
+            -webkit-transition: all 0.6s scale(1.6);
+            transition: all 0.6s;
+            transform: scale(1.6) rotate(-45deg);
+        }
+
+    .diamond:hover img {
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2) rotate(-45deg);
+    }
