@@ -8,3 +8,5 @@
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 test.html
+*.sqlite
+.vs/VSWorkspaceState.json
