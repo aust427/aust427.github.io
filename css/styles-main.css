@@ -1,17 +1,11 @@
 ﻿body {
-    background-image: url("https://raw.githubusercontent.com/aust427/aust427.github.io/master/images/SAM-Three-js.jpg");
+    background-image: url("https://raw.githubusercontent.com/aust427/aust427.github.io/master/images/100-3-subhalo-0.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-
 footer {
     bottom: 0;
 }
 
-#splash-text {
-    color: orange;
-    text-align: center;
-    padding: 15% 0 0 0;
-}
 
