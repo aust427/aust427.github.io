@@ -15,20 +15,21 @@
 }
 
 body, html {
-    background-color: #FEF8EC;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
+    color: #989898;
 }
 
 h1, h2, h3, h4 {
     margin-bottom: 5px;
-    color: #70A9A1;
+    color: #2A8CB7;
     font-weight: 600;
     padding-bottom: 5px;
 }
 
 #title {
     text-align: center;
-    background-color: #FEF8EC;
+    background-color: black;
     text-decoration: none;
     font-size: 35px;
     margin-bottom: 0;
@@ -39,7 +40,7 @@ h1, h2, h3, h4 {
 }
 
 nav {
-    background-color: #FEF8EC;
+    background-color: black;
 }
 
 .jumbotron {
@@ -53,15 +54,15 @@ nav {
 }
 
 #title a:link {
-    color: #1F363D;
+    color: #2A8CB7;
 }
 
 #title a:visited {
-    color: #294851;
+    color: #2A8CB7;
 }
 
 #title a:hover {
-    color: #47859A;
+    color: #69BADD;
     text-decoration: none;
     font-weight: bold;
 }
@@ -94,7 +95,7 @@ footer {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background: #FEF8EC;
+    background: black;
     padding-top: 10px;
 }
 
