@@ -15,7 +15,7 @@
 }
 
 body, html {
-    background-color: black;
+    background-color: #141414;
     font-family: 'Montserrat', sans-serif;
     color: #989898;
 }
@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 
 #title {
     text-align: center;
-    background-color: black;
+    background-color: #141414;
     text-decoration: none;
     font-size: 35px;
     margin-bottom: 0;
@@ -44,7 +44,7 @@ b {
 }
 
 nav {
-    background-color: black;
+    background-color: #141414;
 }
 
 .jumbotron {
@@ -115,7 +115,7 @@ footer {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background: black;
+    background: #141414;
     padding-top: 10px;
 }
 
