@@ -35,6 +35,10 @@ h1, h2, h3, h4 {
     margin-bottom: 0;
 }
 
+b {
+    color: #69BADD;
+}
+
 #collapsingNavbarMd a {
     font-size: 20px;
 }
@@ -88,6 +92,22 @@ nav {
     .navbar-brand{
         font-size: 25px;
     }
+}
+
+.paper-summary{
+    width: 100%;
+}
+
+.paper-left-col{
+    width: 75%;
+}
+
+.paper-right-col{
+    width:25%;
+}
+
+.paper-right{
+    text-align: right;
 }
 
 footer {
