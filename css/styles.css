@@ -108,8 +108,12 @@ nav {
 
 .paper-right{
     text-align: right;
+    vertical-align: top;
 }
 
+.paper-bottom{
+    padding-bottom: 15px;
+}
 
 footer {
     position: absolute;
