@@ -29,26 +29,20 @@
 </head>
 <body>
     <header id="title">
-        <div class="jumbotron jumbotron-fluid" id="title">
-            <div class="container">
-                <a href="index.html" class="active">AUSTEN GABRIELPILLAI</a>
-            </div>
-        </div>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand d-inline-block d-lg-none" href="index.html"><b>A. GABRIELPILLAI</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarMd">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="collapsingNavbarMd">
-                <div class="navbar-nav mx-lg-auto">
-                    <a class="nav-item nav-link" href="about.html"> ABOUT <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="research.html">RESEARCH</a>
-                    <a class="nav-item nav-link" href="products.html">DATA PRODUCTS</a>
-                    <a class="nav-item nav-link" href="a_gabrielpillai_resume.pdf">RESUME</a>
-                    <a class="nav-item nav-link" href="a_gabrielpillai_cv.pdf">CV</a>
-                    <a class="nav-item nav-link" href="astrophotography.html">ASTROPHOTOGRAPHY</a>
-                    <a class="nav-item nav-link" href="personal.html">CREATIVE</a>
-                </div>
+                <ul class="navbar-nav mx-lg-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"> HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"> ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html"> RESEARCH</a></li>
+                    <li class="nav-item"><a class="nav-link" href="releases.html"> DATA RELEASES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a_gabrielpillai_cv.pdf">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="astrophotography.html"> ASTROPHOTOGRAPHY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personal.html"> CREATIVE</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -57,7 +51,7 @@
             <h2>Astrophotography</h2>
             <div class="col-sm-12">
                 <p>
-                    As a hobby, I use various cameras to take pictures of the night sky. 
+                    As a hobby, I use various cameras to take pictures of the night sky. My main cameras are a Canon 60D (unmodified) for widefield imaging when traveling and an ASI1600mm pro for narrowband at home in light polluted environments.
                 </p>
 
             </div>
@@ -69,7 +63,8 @@
                         <div class="offset-lg-2 col-lg-4 offset-md-4 col-md-4">
                             <div class="diamond">
                                 <div class="los1">
-                                    <img class=" img-fluid" src="images/personal-projects/astrophotography/andromeda-icon.png" />
+                                    <img class=" img-fluid" src="images/personal-projects/astrophotography/andromeda-icon.png"
+                                         data-toggle="modal" data-target="#andromeda-modal" />
                                 </div>
                             </div>
                         </div>
@@ -141,6 +136,43 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modals -->
+        <div class="modal fade" id="andromeda-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="exampleModalLabel">The Andromeda Galaxy</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            The Andromeda Galaxy taken from a suburban backyard in central New Jersey.
+                        </p>
+                        <img src="images/personal-projects/astrophotography/andromeda.png" alt="Andromeda" width="100%" class="center">
+                        <p>
+                            <b>Equipment:</b>
+                            <ul>
+                                <li>Canon EOS 60D (Unmodified)</li>
+                                <li>Samyang 135mm f/2.0 ED UMC Lens</li>
+                                <li>Star Adventurer Pro</li>
+                            </ul>
+
+                            <b>Acquisition:</b>
+                            <ul>
+                                <li>December 6nd, 2020, Bortle 6/7</li>
+                                <li>f2.8, 135mm, ISO 400</li>
+                                <li>211 x 35s lights</li>
+                                <li>50 darks</li>
+                                <li>20 flats</li>
+                                <li>50 bias</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>

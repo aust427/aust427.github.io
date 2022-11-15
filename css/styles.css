@@ -11,13 +11,13 @@
 }
 
 .modal-content {
-    background-color: #FEF8EC;
+    background-color: #141414;
 }
 
 body, html {
     background-color: #141414;
     font-family: 'Montserrat', sans-serif;
-    color: #989898;
+    color: #c4c4c4;
 }
 
 h1, h2, h3, h4 {
@@ -36,7 +36,11 @@ h1, h2, h3, h4 {
 }
 
 b {
-    color: #69BADD;
+    color: white;
+}
+
+strong {
+    color: white;
 }
 
 #collapsingNavbarMd a {
@@ -58,15 +62,15 @@ nav {
 }
 
 #title a:link {
-    color: #2A8CB7;
+    color: #69BADD;
 }
 
 #title a:visited {
-    color: #2A8CB7;
+    color: #69BADD;
 }
 
 #title a:hover {
-    color: #69BADD;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -188,3 +192,56 @@ main{
         -webkit-transform: scale(2);
         transform: scale(2) rotate(-45deg);
     }
+
+    .diamond .los2 {
+        width: 160px;
+        height: 160px;
+    }
+    .diamond .los2 img {
+        width: 100%;
+        height: auto;
+        -moz-transition: all 0.6s scale(1.6);
+        -webkit-transition: all 0.6s scale(1.6);
+        transition: all 0.6s;
+        transform: scale(1.6) rotate(-45deg);
+    }
+
+#nameplate {
+    color: #69BADD;
+    max-width: 600px;
+    text-align: center;
+    border: 3px;
+    border: 3px white;
+    border-style: solid none;
+    margin: auto;
+}
+
+#center-div {
+    top: 30%;
+    position: absolute;
+    width: 100%;
+}
+
+#nameplate #line1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+#nameplate #line2{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#parent-photo.diamond{
+
+}
+
+#my-photo{
+
+}
+
+h2#about{
+    padding-bottom: 30px;
+}
