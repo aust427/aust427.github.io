@@ -259,3 +259,11 @@ h2#about {
     margin: auto;
     height: 150px;
 }
+
+.data-row{
+    padding-bottom: 30px;
+}
+
+.data-p{
+    padding-bottom: 10px;
+}

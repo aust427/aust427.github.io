@@ -52,40 +52,47 @@
             <div class="row">
                 <div class="col-sm-12">
                     <p>
-                        Description of data that I have contributed toward creating as part of my research. For access, please contact me, Dr. Rachel Somerville, or Dr. Shy Genel.
+                        Description of data that I have contributed toward creating as part of my research. For access, please contact me unless otherwise noted below. 
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row data-row">
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
                     <h3>IllustrisTNG Rockstar & Consistent-Trees Catalogs</h3>
-                    <p>Catalogs produced by running the Rockstar and Consistent-Trees algorithms on IllustrisTNG volumes at all snapshots. Rockstar outputs available as either raw or Subfind-esque outputs. Subfind-esque outputs are compatable with the illustris_python module.</p>
+                    <p class="data-p">
+                        Dark matter halo and merger tree catalogs produced by running the Rockstar and Consistent-Trees algorithms on IllustrisTNG-dark volumes for all possible resolutions. Rockstar outputs available as either raw (ASCII) or Subfind-esque (HDF5) outputs. Subfind-esque outputs are compatable with the illustris_python module. Includes bijective halo matches to both dark matter only and hydrodynamic Subfind catalogs. <br /> <strong>Citation: Gabrielpillai et. al 2022, 2023a</strong>
+                    </p>
                 </div>
-                <div class="col-md-4" id="parent-photo">
-                    <img src="images/data-releases/ct.png" class="rounded-circle" id="my-photo" />
+
+                <div class="col-md-4">
+                    <div class="diamond" id="parent-photo">
+                        <div class="los2">
+                            <img class="img-fluid" id="my-photo" src="images/data-releases/ct.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row data-row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <h3>Santa Cruz SAM IllustrisTNG-Dark Runs</h3>
+                    <p class="data-p">Galaxy catalogs created by running the Santa-Cruz Semi-Analytic Model (SC-SAM) on IllustrisTNG Consistent-Tree merger trees. Available only at TNG100-1, TNG300-1, and TNG50-1 resolutions. <br /> <strong>Citation: Gabrielpillai et. al 2022, 2023a</strong></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="diamond" id="parent-photo">
+                        <div class="los2">
+                            <img class="img-fluid" id="my-photo" src="images/data-releases/sam.png" />
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-1"></div>
             </div>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-6">
-                    <h3>IllustrisTNG Subfind-Rockstar SubLink Tables</h3>
-                    <p>Linking tables containing bijective matches for dark matter halos identified by Rockstar and Subfind in IllustrisTNG, created by running the SubLink algorithm. Matches have been created between Rockstar dark matter-only (DMO) and Subfind DMO, and Rockstar DMO and Subfind full physics (FP). Matches exist at each snapshot for all resolutions.</p>
                 </div>
-                <div class="col-md-4" id="parent-photo">
-                    <img src="images/data-releases/sublink.png" class="rounded-circle" id="my-photo" />
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-6">
-                    <h3>IllustrisTNG Semi-Analytic Model Runs</h3>
-                    <p>Created by running the Santa-Cruz Semi-Analytic Model (SC-SAM) on IllustrisTNG Consistent-Tree merger trees. Available only at TNG100-1, TNG300-1, and TNG50-1 resolutions.</p>
-                </div>
-                <div class="col-md-4" id="parent-photo">
-                    <img src="images/data-releases/sam.png" class="rounded-circle" id="my-photo" />
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -96,14 +103,17 @@
             <div class="row">
                 <div class="col"><hr /></div>
                 <div class="col-auto social-icons">
-                    <a href="https://github.com/aust427">
+                    <a href="https://github.com/aust427" target="_blank">
                         <img src="icons/GitHub-Mark-64px.png" class="social-icons" />
                     </a>
-                    <a href="https://twitter.com/a_gabrielpillai">
+                    <a href="https://twitter.com/a_gabrielpillai" target="_blank">
                         <img src="icons/Twitter_Logo_Blue.png" class="social-icons" />
                     </a>
-                    <a href="https://www.linkedin.com/in/a-gabrielpillai">
+                    <a href="https://www.linkedin.com/in/a-gabrielpillai" target="_blank">
                         <img src="icons/LI-In-Bug.png" class="social-icons" />
+                    </a>
+                    <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_bibstem_facet%7D&fq_bibstem_facet=(bibstem_facet%3A%22MNRAS.tmp%22%20OR%20bibstem_facet%3A%22MNRAS%22%20OR%20bibstem_facet%3A%22arXiv%22)&p_=0&q=author%3A%22Gabrielpillai%2C%20Austen%22&sort=date%20desc%2C%20bibcode%20desc" target="_blank">
+                        <img src="icons/ads.png" class="social-icons" />
                     </a>
                 </div>
                 <div class="col"><hr /></div>
