@@ -207,7 +207,7 @@ main{
     }
 
 #nameplate {
-    color: #69BADD;
+    color: white;
     max-width: 600px;
     text-align: center;
     border: 3px;
@@ -216,8 +216,12 @@ main{
     margin: auto;
 }
 
+#main-carousel{
+    max-width: 600px;
+}
+
 #center-div {
-    top: 30%;
+    top: 35%;
     position: absolute;
     width: 100%;
 }
@@ -234,14 +238,24 @@ main{
     margin-bottom: 15px;
 }
 
-#parent-photo.diamond{
 
+#parent-photo.diamond {
 }
 
-#my-photo{
-
+#my-photo {
 }
 
-h2#about{
+h2#about {
     padding-bottom: 30px;
+}
+
+.schools-list {
+    list-style-type: none;
+}
+.inside-carousel {
+    color: white;
+    max-width: 380px;
+    width: 100%;
+    margin: auto;
+    height: 150px;
 }
